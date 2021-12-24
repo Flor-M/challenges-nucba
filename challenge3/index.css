@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+table, th, td{
+    border: 2px solid gainsboro;
+    border-collapse: collapse;
+    text-align: center;
+    width: min-content;
+    height: max-content;
+    margin-left:auto; 
+    margin-right:auto;
+}
+th, td {
+    padding: 7px;
+    margin: 7px;
+}
+.mini {
+    width: 25%;
+}
+.menos {
+    width: 97%;
+    height: 97%;
+}
+.mini2 {
+    width: 20px;
+    height: 20px;
+}

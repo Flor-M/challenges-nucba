@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+.mas {
+    border-radius: 50%;
+    background-color: #3680fd;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 60px;
+    padding: 16px 30px;
+    margin: 40px;
+    font-weight: normal;
+    font-family: "nanum";
+    box-shadow:2px 8px 8px rgba(128, 128, 128, 0.555); 
+}
+@font-face {
+    font-family: "nanum";
+    src: url(./fonts/NanumMyeongjo-Regular.ttf);
+}
+@font-face {
+    font-family: "caviar";
+    src: url(./fonts/CaviarDreams.ttf);
+}
+.button {
+    border-radius: 5px;
+    background-color: #3680fd;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px 50px;
+    margin: 40px;
+    font-weight: normal;
+    font-family: -apple-system, sans-serif;
+    box-shadow:1px 1px 7px rgba(128, 128, 128, 0.555); 
+}
+.button2 {
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: #3680fd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px 50px;
+    margin: 40px;
+    font-weight: normal;
+    font-family: -apple-system, sans-serif;
+}
+.button:hover, .mas:hover {
+    background-color: white;
+    color: #3680fd;
+    transition-duration: 0.3s;
+}
+.button2:hover {
+    box-shadow:1px 1px 7px rgba(128, 128, 128, 0.555); 
+    color: #6fa4ff;
+    transition-duration: 0.3s;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios - NUCBA</title>
+</head>
+<body>
+    <h1>
+        Ejercicios HTML
+    </h1>
+    <fieldset>
+        <legend>Ejercicio 1</legend>
+        <h2>
+            Currículum Vitae de Bruce Wayne
+        </h2>
+        <section>
+            <h3>
+                Datos personales
+             </h3>
+            <ul>
+                 <li>
+                     Nombre completo: 
+                     <strong>
+                         Bruce Wayne
+                     </strong>
+                 </li>
+                 <li>
+                     Fecha de nacimiento: 
+                     <b>
+                         1/5/1939
+                     </b>
+                 </li>
+                 <li>
+                     Lugar de nacimiento: 
+                     <b>
+                         Gotham City
+                     </b>
+                 </li>
+            </ul>
+        </section>
+        <section>
+            <h3>
+                Formación académica
+             </h3>
+            <ul>
+                 <li>
+                     1956-1961: 
+                     <b>
+                         Universidad del Espantapájaros
+                     </b>
+                 </li>
+                 <li>
+                     1952-1956: 
+                     <b>
+                         Instituto de Dos Caras
+                     </b>
+                 </li>
+                 <li>
+                     1944-1952: 
+                     <b>
+                         Escuela Primaria del Joker
+                     </b>
+                 </li>
+            </ul>
+        </section>
+        <section>
+            <h3>
+                Experiencia laboral
+            </h3>
+            <ul>
+                <li>
+                    1975-1985: 
+                    <b>
+                        En el paro
+                    </b>
+                </li>
+                <li>
+                    1965-1975: 
+                    <b>
+                        Cazavillanos y demás chusma
+                    </b>
+                </li>
+                <li>
+                    1962-1965: 
+                    <b>
+                        Aprendiz de superhéroe
+                    </b>
+                </li>
+            </ul>
+        </section>
+    </fieldset>
+    <fieldset>
+        <legend>Ejercicio 2</legend>
+        <h2>
+            Internet
+        </h2>
+        <section>
+            <div>
+                <h3>
+                    Contenido
+                </h3>
+                <ol>
+                    <li>
+                        Principales protocolos
+                    </li>
+                    <li>
+                        Formas de conectarse
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h3>
+                    1. Principales protocolos
+                </h3>
+                <ul>
+                    <li>
+                        Transmisión de ficheros:
+                        <ul>
+                            <li>
+                                FTP
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Correo electrónico:
+                        <ul>
+                            <li>
+                                IMAP
+                            </li>
+                            <li>
+                                POP
+                            </li>
+                            <li>
+                                SMTP
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    2. Formas de conectarse
+                </h3>
+                <dl>
+                   <dt>
+                       Red Telefónica Conmutada (RTC)
+                   </dt>
+                   <dd>
+                       La línea telefónica d etoda la vida. Para acceder a internet es necesario un módem.
+                   </dd>
+                   <dt>
+                       Red Digital de Servicios Integrados (RDSI)
+                   </dt>
+                   <dd>
+                       Una línea telefónica especial. Para acceder a internet es necesario un módem RDSI.
+                   </dd>
+                   <dt>
+                       Línea de Abonado Digital Asimétrica (ADSL)
+                   </dt>
+                   <dd>
+                       Se basa en la conversión de una línea RTC en una línea de alta velocidad. Para acceder a internet es necesario un módem ADSL.
+                    </dd>
+                    <dt>
+                       Fibra Óptica
+                    </dt>
+                    <dd>
+                       Una línea de fibra óptica. Normalmente la fibra óptica no llega hasta el usuario final, por lo que el término más apropiado es Fibra híbrida coaxial.
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </fieldset>
+    <fieldset>
+        <legend>Ejercicio 3</legend>
+        <h2>
+            Formulario de registro
+        </h2>
+        <form>
+            <div>
+                <label for="Nombre">
+                    Nombre: 
+                </label>
+                <input type="text" id="Nombre">
+            </div>
+            <br>
+            <div>
+                <label for="Apellidos">
+                    Apellidos: 
+                </label>
+                <input type="text" id="Apellidos">
+            </div>
+            <br>
+            <div>
+                <label for="Sexo">
+                    Sexo: 
+                </label>
+                <input type="radio" id="hombre" name="Sexo"> <!-- Puse name para que me deje tildar sólo una de las dos opciones] -->
+                <label for="hombre">
+                    hombre
+                </label>
+                <input type="radio" id="mujer" name="Sexo" >
+                <label for="mujer">
+                    mujer
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="Correo">
+                    Correo:
+                </label>
+                <input type="email" id="Correo">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="recibir">
+                <label for="recibir">
+                    Deseo recibir información sobre novedades y ofertas
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="condiciones">
+                <label for="condiciones">
+                    Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+                </label>
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Ejercicio 4</legend>
+        <h2>
+            Formulario de registro
+        </h2>
+        <form>
+            <div>
+                <label for="Nombre">
+                    Nombre: 
+                </label>
+                <input type="text" id="Nombre">
+            </div>
+            <br>
+            <div>
+                <label for="Apellidos">
+                    Apellidos: 
+                </label>
+                <input type="text" id="Apellidos">
+            </div>
+            <br>
+            <div>
+                <label for="Sexo">
+                    Sexo: 
+                </label>
+                <input type="radio" id="hombre" name="Sexo"> <!-- Puse name para que me deje tildar sólo una de las dos opciones] -->
+                <label for="hombre">
+                    hombre
+                </label>
+                <input type="radio" id="mujer" name="Sexo" >
+                <label for="mujer">
+                    mujer
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="Correo">
+                    Correo:
+                </label>
+                <input type="email" id="Correo">
+            </div>
+            <br>
+            <div>
+                <label for="Poblacion">
+                    Población:
+                </label>
+                <select id="Poblacion">
+                    <option>
+                        Alicante
+                    </option>
+                    <option>
+                        Castellon
+                    </option>
+                    <option>
+                        Valencia
+                    </option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="Descripcion">
+                    Descripción: 
+                </label>
+                <textarea  id="Descripcion" rows="5" cols="58">
+                </textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="recibir">
+                <label for="recibir">
+                    Deseo recibir información sobre novedades y ofertas
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="condiciones" >
+                <label for="condiciones">
+                    Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+                </label>
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>

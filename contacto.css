@@ -1,0 +1,191 @@
+body {
+    background-color: #171619;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+@font-face {
+    font-family: "archivo-semi-medium";
+    src: url(./fonts/Archivo_SemiExpanded-Medium.ttf);
+}
+@font-face {
+    font-family: "archivo-semi-regular";
+    src: url(./fonts/Archivo_SemiExpanded-Regular.ttf);
+}
+@font-face {
+    font-family: "archivo-semi-bold";
+    src: url(./fonts/Archivo_SemiExpanded-Bold.ttf);
+}
+/*-----header fixed-----*/
+header {
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-container {
+    width: 80%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(25,23,22,0.4864320728291317) 47%, rgba(255,255,255,0) 100%);
+    border-bottom: 1px solid #e5360c;
+    font-family: "archivo-semi-bold";
+    font-size: 9pt;
+}
+.nucba {
+    width: 20px;
+    margin: 0px 8px;
+}
+.item-nav, .a-nav, .item-list {
+    color: #e5360c;
+    text-decoration: none;
+    font-size: 1em;
+}
+.item-nav {
+    margin: 0px 8px;
+}
+.nucba:hover, .item-nav:hover {
+    filter: invert(1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.item {
+    padding: 6px 4px;
+    background-color: rgba(25, 23, 22, 0.836);
+} 
+.item-list:hover, .item:hover {
+    color: #1ac9f3;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: rgba(25, 23, 22, 0.897)
+}
+li {
+    list-style: none;
+}
+.nucba {
+    display: none;
+}
+/* chequear como posicionarlo mas piola y responsive*/
+ul {
+    display: none;
+    position: absolute;
+    top: 5vh;
+    left: 47vw;
+    padding: 0px;
+}
+.change {
+    display: none;
+}
+.change:checked ~ ul {
+    display: inline-block;
+}
+/*-----media header-----*/
+@media (max-width: 600px) {
+    .big-screen {
+        display: none;
+    }
+    .nucba {
+        display: inline-block;
+    }
+}
+/*---------main---------*/
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recuadro-content {
+    width: 50vw;
+    height: 60vh;
+    background-color: #937f66;
+    border-radius: 20px;
+    display: flex;
+    -webkit-box-shadow: 6px 11px 14px -9px rgba(0,0,0,0.47); 
+    box-shadow: 6px 11px 14px -9px rgba(0,0,0,0.47);
+}
+.formulario {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h4 {
+    font-family: "archivo-semi-medium";
+    margin: 2px;
+    color: #171619;
+}
+.container-input {
+    margin: 8px 0px 8px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label-form {
+    font-family: "archivo-semi-bold";
+    color: #171619;
+    font-size: 8pt;
+    margin: 5px;
+    width: 70%; /*para que empiece a la par del input*/
+}
+input, textarea {
+    width: 70%;
+    border: none;
+    font-family: "archivo-semi-regular";
+}
+input {
+    height: 28px;
+    border-radius: 22px;
+    padding: 0 9px; /*para que el placeholder se separe del borde del input*/
+}
+.input-active:focus {
+    outline: 2px solid #0cc2f0;
+}
+textarea {
+    height: 40px;
+    border-radius: 16px;
+    position: relative;
+    padding: 8px 9px;
+    z-index: 1; /*para que suba una capa y superponga a la imagen*/
+}
+#submit {
+    background-color: #e5360c;
+    font-family: "archivo-semi-bold";
+    width: 74%;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1; /*para que suba una capa y superponga a la imagen*/
+}
+#submit:hover {
+    filter: invert(1);
+    transition-duration: 0.3s;
+}
+.imagen-scarym {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#scarymovie {
+    height: 98%;
+    object-fit: cover;
+    border-radius: 20px;
+}
