@@ -1,5 +1,5 @@
 body {
-    background-color: #171619;
+    background-color: rgb(10, 29, 38);
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -16,10 +16,10 @@ body {
     font-family: "archivo-semi-bold";
     src: url(./fonts/Archivo_SemiExpanded-Bold.ttf);
 } 
-/*-----header fixed-----*/
+/* HEADER */
 header {
-    position:fixed;
     width: 100%;
+    position:fixed;
     display: flex;
     justify-content: center;
 }
@@ -30,84 +30,40 @@ header {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(25,23,22,0.4864320728291317) 47%, rgba(255,255,255,0) 100%);
-    border-bottom: 1px solid #e5360c;
+    border-bottom: 1px solid rgb(25, 157, 209);
     font-family: "archivo-semi-bold";
-    font-size: 9pt;
+    font-size: 0.9rem;
 }
-.nucba {
-    width: 20px;
-    margin: 0px 8px;
-}
-.item-nav, .a-nav, .item-list {
-    color: #e5360c;
+.item-nav, .a-nav{
+    color: rgb(25, 157, 209);
     text-decoration: none;
     font-size: 1em;
 }
 .item-nav {
-    margin: 0px 8px;
-}
-.nucba:hover, .item-nav:hover {
-    filter: invert(1);
+    margin: 0% 1%;
     transition-duration: 0.3s;
+}
+.a-nav:hover {
+    color: rgb(213, 46, 106);
     cursor: pointer;
 }
-.item {
-    padding: 6px 4px;
-    background-color: rgba(25, 23, 22, 0.836);
-} 
-.item-list:hover, .item:hover {
-    color: #1ac9f3;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-.item:hover {
-    background-color: rgba(25, 23, 22, 0.897)
-}
-li {
-    list-style: none;
-}
-.nucba {
-    display: none;
-}
-/* chequear como posicionarlo mas piola y responsive*/
-ul {
-    display: none;
-    position: absolute;
-    top: 5vh;
-    left: 47vw;
-    padding: 0px;
-}
-.change {
-    display: none;
-}
-.change:checked ~ ul {
-    display: inline-block;
-}
-/*-----media header-----*/
-@media (max-width: 600px) {
-    .big-screen {
-        display: none;
-    }
-    .nucba {
-        display: inline-block;
-    }
-}
-/*-----main-----*/
+/* MAIN */
 main {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(243, 239, 233);
 }
 .section1-conteiner {
-    width: 100%;
-    background-image: url(./img/wall_08_10-07-13.jpg);
+    height: 85vh;
+    background-image: url(./img/gradient.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .section1, .section2 {
     width: 70%;
@@ -116,14 +72,12 @@ main {
     align-items: center;
 }
 .section1 {
-    margin-top: 100px;
-    margin-bottom: 40px;
-    background-image: url(./img/wall-blur.jpg);
+    height: 53%;
+    background-color: rgba(25, 157, 209, 0.171);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border-radius: 7px;
-    color: #d8cfc4;
+    border-radius: 0.5rem;
 }
 .conteiner-contenido {
     width: 50%;
@@ -136,7 +90,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 p {
     font-family: "archivo-semi-regular";
@@ -145,41 +98,29 @@ h1, h2, h3 {
     font-family: "archivo-semi-medium";
 }
 h1 {
-    font-size: 30pt;
+    font-size: 3rem;
 }
 .buttons {
     display: flex;
     flex-direction: row;
     margin: 4%;
 }
-.learn:hover {
-    background-color: #0e0e0f;
-    color: #1ac9f3;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-.call:hover {
-    background-color: #1ac9f3;
-    color: #0e0e0f;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
 .learn, .call {
-    border-radius: 20px;
-    height: 28px;
-    margin: 8px;
+    border-radius: 1rem;
+    height: 2rem;
+    margin: 2%;
     font-family: "archivo-semi-bold";
-    font-size: 8pt;
-    padding: 0px 20px;
+    font-size: 0.7rem;
+    padding: 0% 5%;
     border: none;
+    background-color: rgb(25, 157, 209);
+    color: rgb(243, 239, 233);
 }
-.call {
-    background-color: #0e0e0f;
-    color: #d8cfc4;
-}
-.learn {
-    background-color: #d8cfc4;
-    color: #0e0e0f;
+.learn:hover, .call:hover {
+    background-color: rgb(213, 46, 106);
+    color: rgb(243, 239, 233);
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 .img-section1 {
     width: 50%;
@@ -192,26 +133,33 @@ h1 {
     height: 80%;
     margin: 5%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 .section2 {
-    height: 200px;
+    width: 80vw;
+    height: 25vh;
     text-align: center;
-    color: #937f66;
 }
 .section3-conteiner {
-    width: 100%;
-    background-image: url(./img/wall_section3.jpg);
+    height: 65vh;
+    background-image: url(./img/flip-gradient.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
-    color: #d8cfc4;
+    align-items: center;
+}
+.opacidad-section3 {
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(10, 29, 38, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section3, .section4 {
-    width: 80%;
-    margin: 40px;
+    width: 80vw;
+    margin: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,58 +176,25 @@ h1 {
     align-items: center;
 }
 .benefit {
-    margin: 20px 40px;
+    margin: 2rem 2rem;
+}
+.fas {
+    font-size: 3rem;
+}
+.fas-how {
+    color: rgb(213, 46, 106);
 }
 .how {
-    margin: 20px 30px;
+    margin: 2rem 1.5rem;
 }
 h2 {
-    font-size: 20pt;
+    font-size: 2rem;
 }
 h3 {
-    font-size: 15pt;
+    font-size: 1.5rem;
 }
 h2, h3, .p-benefit, .p-how {
-    margin: 20px;
+    margin: 1rem;
     text-align: center;
 }
-.icon {
-    height: 80px;
-}
-.section4 {
-    color: #937f66;
-}
-/* PONER EN MENU HAMBURGUESA EN EL HEADER
-
-aside {
-    position: relative;
-    top: 80px;
-}
-table {
-    font-family: "relaway";
-    width: 20%;
-    height: 50%;
-    border-collapse: collapse;
-    text-align: center;
-    color:rgb(66, 71, 71);
-    margin: 2%;
-    margin-left: auto;
-    margin-right: auto;
-}
-td, th {
-    padding: 15px;
-}
-th {
-    background-color: rgba(0, 0, 0, 0.205);
-}
-td {
-    background-color: rgba(0, 0, 0, 0.137);
-    transition-duration: 0.3s;
-}
-td:hover {
-    background-color: rgba(0, 0, 0, 0.027);
-}
-a {
-    color: rgb(66, 71, 71);
-    text-decoration: none;
-} */
+/* MEDIAS */

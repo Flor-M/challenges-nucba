@@ -1,5 +1,5 @@
 body {
-    background-color: #171619;
+    background-color: rgb(10, 29, 38);
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -16,10 +16,10 @@ body {
     font-family: "archivo-semi-bold";
     src: url(./fonts/Archivo_SemiExpanded-Bold.ttf);
 }
-/*-----header fixed-----*/
+/* HEADER */
 header {
-    position:fixed;
     width: 100%;
+    position:fixed;
     display: flex;
     justify-content: center;
 }
@@ -30,81 +30,37 @@ header {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(25,23,22,0.4864320728291317) 47%, rgba(255,255,255,0) 100%);
-    border-bottom: 1px solid #e5360c;
+    border-bottom: 1px solid rgb(25, 157, 209);
     font-family: "archivo-semi-bold";
-    font-size: 9pt;
+    font-size: 0.9rem;
 }
-.nucba {
-    width: 20px;
-    margin: 0px 8px;
-}
-.item-nav, .a-nav, .item-list {
-    color: #e5360c;
+.item-nav, .a-nav{
+    color: rgb(25, 157, 209);
     text-decoration: none;
     font-size: 1em;
 }
 .item-nav {
-    margin: 0px 8px;
-}
-.nucba:hover, .item-nav:hover {
-    filter: invert(1);
+    margin: 0% 1%;
     transition-duration: 0.3s;
+}
+.a-nav:hover {
+    color: rgb(213, 46, 106);
     cursor: pointer;
 }
-.item {
-    padding: 6px 4px;
-    background-color: rgba(25, 23, 22, 0.836);
-} 
-.item-list:hover, .item:hover {
-    color: #1ac9f3;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-.item:hover {
-    background-color: rgba(25, 23, 22, 0.897)
-}
-li {
-    list-style: none;
-}
-.nucba {
-    display: none;
-}
-/* chequear como posicionarlo mas piola y responsive*/
-ul {
-    display: none;
-    position: absolute;
-    top: 5vh;
-    left: 47vw;
-    padding: 0px;
-}
-.change {
-    display: none;
-}
-.change:checked ~ ul {
-    display: inline-block;
-}
-/*-----media header-----*/
-@media (max-width: 600px) {
-    .big-screen {
-        display: none;
-    }
-    .nucba {
-        display: inline-block;
-    }
-}
-/*---------main---------*/
+/* MAIN */
 .form-container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(243, 239, 233);
 }
 .recuadro-content {
     width: 50vw;
     height: 60vh;
-    background-color: #937f66;
-    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(18,24,27,0.6895133053221288) 0%, rgba(42,56,63,0.9108018207282913) 100%);
+    border-radius: 1.5rem;
     display: flex;
     -webkit-box-shadow: 6px 11px 14px -9px rgba(0,0,0,0.47); 
     box-shadow: 6px 11px 14px -9px rgba(0,0,0,0.47);
@@ -118,31 +74,31 @@ ul {
 }
 form {
     width: 100%;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 h4 {
     font-family: "archivo-semi-medium";
-    margin: 2px;
-    color: #171619;
+    margin: 1%;
 }
 .container-input {
-    margin: 8px 0px 8px 0px;
+    margin: 2% 0%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .label-form {
-    font-family: "archivo-semi-bold";
-    color: #171619;
-    font-size: 8pt;
-    margin: 5px;
-    width: 70%; /*para que empiece a la par del input*/
+    font-family: "archivo-semi-regular";
+    font-size: 0.8rem;
+    margin: 1%;
+    width: 70%;
 }
 input, textarea {
     width: 70%;
@@ -150,32 +106,33 @@ input, textarea {
     font-family: "archivo-semi-regular";
 }
 input {
-    height: 28px;
-    border-radius: 22px;
-    padding: 0 9px; /*para que el placeholder se separe del borde del input*/
+    height: 1.7rem;
+    border-radius: 1rem;
+    padding: 0% 2%;
 }
 .input-active:focus {
-    outline: 2px solid #0cc2f0;
+    outline: 2px solid rgb(25, 157, 209);
 }
 textarea {
-    height: 40px;
-    border-radius: 16px;
-    position: relative;
-    padding: 8px 9px;
-    z-index: 1; /*para que suba una capa y superponga a la imagen*/
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 2%;
+    z-index: 1;
 }
-#submit {
-    background-color: #e5360c;
+.submit {
     font-family: "archivo-semi-bold";
     width: 74%;
+    height: 2rem;
+    margin-top: 6%;
+    border-radius: 1rem;
     cursor: pointer;
-    font-weight: 600;
-    margin-top: 15px;
-    position: relative;
-    z-index: 1; /*para que suba una capa y superponga a la imagen*/
+    font-size: 0.8rem;
+    z-index: 1;
+    background-color: rgb(213, 46, 106);
+    color: rgb(243, 239, 233);
 }
 #submit:hover {
-    filter: invert(1);
+    background-color: rgb(25, 157, 209);
     transition-duration: 0.3s;
 }
 .imagen-scarym {
@@ -187,5 +144,5 @@ textarea {
 #scarymovie {
     height: 98%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 1.5rem;
 }
