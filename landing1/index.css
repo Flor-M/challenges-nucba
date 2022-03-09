@@ -31,7 +31,7 @@ header {
     align-items: center;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(25,23,22,0.4864320728291317) 47%, rgba(255,255,255,0) 100%);
     border-bottom: 1px solid rgb(25, 157, 209);
-    font-family: "archivo-semi-bold";
+    font-family: "archivo-semi-regular";
     font-size: 0.9rem;
 }
 .item-nav, .a-nav{
@@ -141,6 +141,7 @@ h1 {
     text-align: center;
 }
 .section3-conteiner {
+    width: 100%;
     height: 65vh;
     background-image: url(./img/flip-gradient.jpeg);
     background-repeat: no-repeat;
