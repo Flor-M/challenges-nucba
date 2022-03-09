@@ -1,5 +1,9 @@
-body {
-    text-align: center;
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 table, th, td{
     border: 2px solid gainsboro;
@@ -16,10 +20,6 @@ th, td {
 }
 .mini {
     width: 25%;
-}
-.menos {
-    width: 97%;
-    height: 97%;
 }
 .mini2 {
     width: 20px;

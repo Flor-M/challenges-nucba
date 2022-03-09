@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tabla3.css">
+    <title>
+        Challenge tabla 2 HTML.
+    </title>
+</head>
+<body>
+    <main>
+        <h3>
+            Comparativa de reproductores MP3
+        </h3>
+        <table>
+            <caption>
+                Tabla comparativa de las características técnicas de los reproductores MP3
+            </caption>
+            <tr aria-rowspan="2">
+                <th>
+                    &nbsp;
+                </th>
+                <th colspan="3" scope="colgroup" id="mp3_mini">
+                    <img src="./img3/tabla3.jpg" alt="MP3 mini" class="mini">
+                    <div>
+                        MP3 mini
+                    </div>
+                </th>
+                <th colspan="2" scope="colgroup" id="mp3_grande">
+                    <img src="./img3/tabla3.jpg" alt="MP3 grande" class="menos">
+                    <div>
+                        MP3 grande
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" header="mp3_grande, mp3_mini">
+                    Capacidad de almacenamiento
+                </th>
+                <td>
+                    4GB (1.000 canciones)
+                </td>
+                <td>
+                    8GB (2.000 canciones)
+                </td>
+                <td>
+                    16GB (4.000 canciones)
+                </td>
+                <td>
+                    30GB (7.500 canciones)
+                </td>
+                <td>
+                    80GB (20.000 canciones)
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" header="mp3_grande, mp3_mini">
+                    Colores
+                </th>
+                <td>
+                    <img src="./img3/gris_claro.jpg" alt="Gris claro" class="mini2">
+                </td>
+                <td>
+                    <img src="./img3/gris_oscuro.jpg" alt="Gris oscuro" class="mini2">
+                    <img src="./img3/verde.jpg" alt="Verde" class="mini2">
+                    <img src="./img3/celeste.jpg" alt="Celeste" class="mini2">
+                    <img src="./img3/rosa.jpg" alt="Rosa" class="mini2">
+                </td>
+                <td>
+                    <img src="./img3/gris_oscuro.jpg" alt="Gris oscuro" class="mini2">
+                </td>
+                <td colspan="2">
+                    <img src="./img3/gris_claro.jpg" alt="Gris claro" class="mini2">
+                    <img src="./img3/gris_oscuro.jpg" alt="Gris oscuro" class="mini2">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" header="mp3_grande, mp3_mini">
+                    Pantalla
+                </th>
+                <td colspan="3">
+                    LCD de 3 cm (diagonal) con retroiluminación
+                </td>
+                <td colspan="2">
+                    LCD de 6 cm (diagonal) con retroiluminación
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" header="mp3_grande, mp3_mini">
+                    Tiempo de carga
+                </th>
+                <td rowspan="2" colspan="3">
+                    Unas 3 horas
+                </td>
+                <td colspan="2">
+                    Unas 4 horas
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Unas 2 horas para alcanzar el 80% de la capacidad
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

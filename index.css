@@ -6,6 +6,9 @@
     font-family: "noto-italic";
     src: url(./assets/fonts/NotoSerifDisplay-Italic.ttf);
 }
+body {
+    background-color: rgb(241, 241, 241);
+}
 .container-one {
     height: 100vh;
     font-family: "noto-light";
@@ -53,7 +56,11 @@ li {
     top: 17vh;
     left: 12vw;
     width: 15%;
-    color: rgba(0, 0, 0, 0.575);
+    color: rgba(0, 0, 0, 0.658);
+    align-items: flex-start;
+}
+.profile-img {
+    width: 100%;
 }
 .profile-list {
     padding: 0rem;
@@ -69,7 +76,7 @@ li {
     right: 15vw;
 }
 .container-list a {
-    color: rgba(0, 0, 0, 0.575);
+    color: rgba(0, 0, 0, 0.658);
     transition-duration: 0.3s;
 }
 .container-list a:hover {
@@ -87,4 +94,20 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+}
+/* MEDIAS MOBILE TABLET */
+@media (max-width: 1024px) {
+    .container-nav {
+        flex-direction: column;
+        width: 40%;
+    }
+    .container-section {
+        top: 61vh;
+        left: auto;
+        width: 55%;
+    }
+    .container-list {
+        top: 59vh;
+        right: auto;
+    }
 }

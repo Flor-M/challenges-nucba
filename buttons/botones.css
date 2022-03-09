@@ -1,5 +1,17 @@
-body {
-    text-align: center;
+@font-face {
+    font-family: "nanum";
+    src: url(./fonts/NanumMyeongjo-Regular.ttf);
+}
+@font-face {
+    font-family: "caviar";
+    src: url(./fonts/CaviarDreams.ttf);
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .mas {
     border-radius: 50%;
@@ -14,14 +26,6 @@ body {
     font-weight: normal;
     font-family: "nanum";
     box-shadow:2px 8px 8px rgba(128, 128, 128, 0.555); 
-}
-@font-face {
-    font-family: "nanum";
-    src: url(./fonts/NanumMyeongjo-Regular.ttf);
-}
-@font-face {
-    font-family: "caviar";
-    src: url(./fonts/CaviarDreams.ttf);
 }
 .button {
     border-radius: 5px;
