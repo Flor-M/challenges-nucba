@@ -205,6 +205,8 @@ h2, h3, .p-benefit, .p-how {
     }
     .section1 {
         height: auto;
+        width: 85%;
+        margin: 4rem 0rem;
     }
     .conteiner-contenido {
         width: 100%;
@@ -224,6 +226,7 @@ h2, h3, .p-benefit, .p-how {
     }
     .section2 {
         height: 35vh;
+        margin: 2rem 0rem;
     }
     .section3, .section3-conteiner {
         height: auto;
@@ -258,7 +261,10 @@ h2, h3, .p-benefit, .p-how {
         height: 100%;
     }
     .section1-conteiner {
-        padding: 13% 0%;
+        padding: 3% 0%;
+    }
+    .section2 {
+        margin: 2rem 0rem;
     }
     .section3-conteiner, .section1, .section1-conteiner {
         height: auto;
@@ -276,5 +282,11 @@ h2, h3, .p-benefit, .p-how {
     .how {
         margin: 2rem 1rem;
         width: 40%;
+    }
+}
+/* MEDIA DESKTOP */
+@media (min-width: 1514px) {
+    .section1, .section2, .section3, .section4 {
+        width: 50%;
     }
 }

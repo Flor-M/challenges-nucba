@@ -192,7 +192,6 @@ li {
         flex-direction: column;
     }
     .welcome {
-        margin: 3rem;
         position: absolute;
         top: 17rem;
     }
@@ -210,8 +209,11 @@ li {
     }
 }
 @media (min-width: 325px) and (max-width: 836px) {
+    .encabezado-conteiner {
+        height: 110vh;
+    }
     .container-baco {
-        height: 80%;
+        height: 70%;
     }
     .welcome {
         top: 40%;
@@ -224,5 +226,11 @@ li {
     .btn-gotchu {
         width: 100%;
         margin-bottom: 4rem;
+    }
+}
+/* MEDIA DESKTOP */
+@media (min-width: 1514px) {
+    .welcome-organizer, .section1-icons {
+        width: 50%;
     }
 }
