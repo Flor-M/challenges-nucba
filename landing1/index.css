@@ -198,4 +198,83 @@ h2, h3, .p-benefit, .p-how {
     margin: 1rem;
     text-align: center;
 }
-/* MEDIAS */
+/* MEDIAS MOBILE */
+@media (max-width: 480px) {
+    header {
+        height: 5vh;
+    }
+    .section1 {
+        height: auto;
+    }
+    .conteiner-contenido {
+        width: 100%;
+    }
+    h1 {
+        margin: 1rem 0rem;
+    }
+    .buttons, .call, .learn {
+        margin: 4% 0%;
+    }
+    .img-section1 {
+        width: 90%;
+    }
+    #edificio {
+        width: 100%;
+        height: 100%;
+    }
+    .section2 {
+        height: 35vh;
+    }
+    .section3, .section3-conteiner {
+        height: auto;
+        width: auto;
+    }
+    .benefits-container, .how-container, .section1, .buttons {
+        flex-direction: column;
+    }
+}
+/* MEDIAS TABLET */
+@media (min-width: 481px) and (max-width: 1024px) {
+    header {
+        height: 5vh;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    .conteiner-contenido, .img-section1 {
+        width: 80%;
+    }
+    .contenido {
+        width: auto;
+    }
+    h1 {
+        margin: 1rem 0rem;
+    }
+    .call, .learn {
+        width: 50%;
+    }
+    #edificio {
+        width: 100%;
+        height: 100%;
+    }
+    .section1-conteiner {
+        padding: 13% 0%;
+    }
+    .section3-conteiner, .section1, .section1-conteiner {
+        height: auto;
+    }
+    .section3, .section4 {
+        margin: 3rem 0rem;
+    }
+    .benefits-container, .how-container {
+        flex-wrap: wrap;
+    }
+    .benefit {
+        margin: 2rem 1rem;
+        width: 35%;
+    }
+    .how {
+        margin: 2rem 1rem;
+        width: 40%;
+    }
+}

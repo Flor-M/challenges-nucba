@@ -1,6 +1,6 @@
 body {
     background: rgb(240, 221, 183);
-    margin: 8px 50px;
+    margin: 1.5rem 2.5rem;
 }
 @font-face {
     font-family: "roboto-regular";
@@ -14,8 +14,12 @@ body {
     font-family: "roboto-light";
     src: url(./fonts/Roboto-Light.ttf);
 }
+/* HEADER  */
 .logo {
-    height: 6vh;
+    height: 5vh;
+}
+#change {
+    display: none;
 }
 li {
     list-style: none;
@@ -27,10 +31,10 @@ li {
 .lista-header a {
     text-decoration: none;
     display: inline-block;
-    margin: 0px 30px;
+    margin: 0rem 2rem;
     color: rgb(17, 17, 17);
     font-family: "roboto-light";
-    font-size: 15pt;
+    font-size: 1.3rem;
 }
 .encabezado-conteiner {
     height: 100vh;
@@ -40,11 +44,11 @@ li {
     justify-content: space-around;
     align-items: center;
     border: 1px solid rgb(17, 17, 17);
-    padding: 10px 0px;
-    height: 8%;
+    padding: 0.7rem 0rem;
+    height: 8vh;
 }
 .welcome-conteiner {
-    height: 92%;
+    height: 94%;
     border: 1px solid rgb(17, 17, 17);
     border-top: none;
     display: flex;
@@ -57,15 +61,16 @@ li {
     width: 70%;
     height: 100%;
 }
+.container-baco {
+    height: 60%;
+}
 .dibujo-baco {
-    height: 75%;
-    margin: 0px 0px 0px 30px;
+    height: 100%;
 }
 .welcome {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 0px 30px 0px 0px;
+    margin-right: 2rem;
 }
 .primera-frase h1, .primera-frase h2 {
     margin: 0px;
@@ -74,26 +79,24 @@ li {
     font-weight: 100;
 }
 .primera-frase h2 {
-    font-size: 30pt;
+    font-size: 2.7rem;
 }
 .primera-frase h1 {
-    font-size: 40pt;
+    font-size: 3.5rem;
 }
 .segunda-frase {
     font-family: "roboto-light";
     font-weight: 100;
 }
 .btn-gotchu {
-    border: none;
     font-family: "roboto-regular";
     text-transform: uppercase;
-    font-size: 12pt;
+    font-size: 1rem;
     height: 6vh;
-    width: 200px;
+    width: 35%;
     border: 1px solid rgb(17, 17, 17);
     background-color: transparent;
     color: rgb(17, 17, 17);
-    font-style: bold;
 }
 .btn-gotchu:hover {
     transition-duration: 0.3s;
@@ -101,8 +104,8 @@ li {
     background-color: rgb(17, 17, 17);
     color: rgba(228,210,190,1);
 }
+/* MAIN  */
 .section1 {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,28 +117,112 @@ li {
     text-decoration: none;
     font-family: "roboto-light";
     font-weight: 100;
-    font-size: 30pt;
+    font-size: 2rem;
     border: 1px solid rgb(17, 17, 17);
     background: rgb(240, 221, 183);
-    padding: 15px 45px;
+    padding: 1.3rem 2.5rem;
 }
 .section1-icons {
-    height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 30px 0px;
+    margin: 2rem 0rem;
 }
 .icon1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 22vw;
-    margin: 0px 25px;
+    margin: 0rem 1.5rem;
 }
 .section1 p, .section1-icons p {
     text-align: center;
     font-family: "roboto-light";
     font-weight: 100;
-    font-size: 15pt;
+    font-size: 1.3rem;
+}
+/* MEDIAS MOBILE */
+@media (max-width: 614px) {
+    .title-section1 {
+        width: 56%;
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .section1-icons {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0rem;
+    }
+    .icon1 {
+        width: 70%;
+        margin: 1rem 0rem;
+    }
+}
+/* MEDIAS MOVILE TABLET */
+@media (max-width: 836px) {
+    body {
+        margin: 1rem 1.5rem;
+    }
+    .lista-header {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .change:checked ~ .lista-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .encabezado {
+        height: 6vh;
+        justify-content: flex-start;
+    }
+    .logo {
+        height: 4vh;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .welcome-conteiner {
+        height: 96%;
+    }
+    .welcome-organizer {
+        width: 85%;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .welcome {
+        margin: 3rem;
+        position: absolute;
+        top: 17rem;
+    }
+    .btn-gotchu {
+        width: 35%;
+    }
+    .container-baco {
+        align-self: flex-end;
+    }
+    .dibujo-baco {
+        height: 48%;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        align-self: flex-end;
+    }
+}
+@media (min-width: 325px) and (max-width: 836px) {
+    .container-baco {
+        height: 80%;
+    }
+    .welcome {
+        top: 40%;
+    }
+}
+@media (min-width: 837px) and (max-width: 1370px) {
+    .primera-frase {
+        margin-top: 1rem;
+    }
+    .btn-gotchu {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
 }
