@@ -208,6 +208,9 @@ h2, h3, .p-benefit, .p-how {
         width: 85%;
         margin: 4rem 0rem;
     }
+    .section1-conteiner {
+        padding: 13% 0%;
+    }
     .conteiner-contenido {
         width: 100%;
     }
@@ -243,6 +246,7 @@ h2, h3, .p-benefit, .p-how {
     }
     .section1 {
         flex-direction: column;
+        margin: 4rem 0rem;
     }
     .conteiner-contenido, .img-section1 {
         width: 80%;
@@ -261,7 +265,7 @@ h2, h3, .p-benefit, .p-how {
         height: 100%;
     }
     .section1-conteiner {
-        padding: 3% 0%;
+        padding: 10% 0%;
     }
     .section2 {
         margin: 2rem 0rem;
