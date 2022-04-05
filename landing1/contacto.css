@@ -159,11 +159,12 @@ textarea {
 /* MEDIAS MOBILE TABLET */
 @media (max-width: 1024px) {
     header {
-        height: 5vh;
+        height: 7vh;
     }
     .recuadro-content {
         width: 85vw;
-        justify-content: space-between;
+        height: 80vh;
+        justify-content: space-around;
         flex-direction: column;
     }
     form {
@@ -176,7 +177,7 @@ textarea {
     }
     .submit {
         position: relative;
-        top: 15vh;
+        top: 16vh;
     }
     .imagen-scarym {
         width: auto;
@@ -196,13 +197,25 @@ textarea {
     .formulario {
         height: 38%;
     }
-    .submit {
-        position: static;
-    }
     .imagen-scarym {
         height: 33vh;
     }
     #scarymovie {
         height: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width: 646px) {
+    .submit {
+        top: 10vh;
+    }
+}
+@media (min-width: 647px) and (max-width: 880px) {
+    .submit {
+        top: 2vh;
+    }
+}
+@media (min-width: 881px) and (max-width: 1024px) {
+    .submit {
+        top: 0vh;
     }
 }
